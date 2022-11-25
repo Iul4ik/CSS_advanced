@@ -103,73 +103,495 @@
     <!-- Visual Style Section3 -->
       <div class="content" id="thirstsection">
         <p>A treia sectiune</p>
-        </div>   
+        </div>
   <!-- First site && _layout1.scss -->
   <div class="content" id="sect1">
-    <div class="header_layout1" >
-      <a href="#" class="text_icon open-popup">FS</a>
-      <a class="layout-panel" href="#">Homepage</a>
-      <a class="layout-panel" href="#">About</a>
-      <a class="layout-panel" href="#">Services</a>
-      <a class="layout-panel" href="#">FAQ</a>
-      <a class="layout-panel" href="#">Contact</a>
-    </div>
-  <div class="popup__bg"> 
-    <form class="popup">
-      <a href="#" class="close-popup">&times;</a>
-        <label>
-          <input type="text" name="name" placeholder="scrieti aici">
-          <div class="label__text">Loghin</div>
-        </label>
-        <label>
-          <input type="password" name="tel">
-          <div class="label__text">Parola</div>
-        </label>
-        <div class="button">
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+     <div class="header_layout1 tab" >
+        <a href="#" class="text_icon open-popup">FS</a>
+        <a class="layout-panel tablinks" href="#" onclick="openLayout(event, 'homepage')">Homepage</a>
+        <a class="layout-panel tablinks" href="#" onclick="openLayout(event, 'about')">About</a>
+        <a class="layout-panel tablinks" href="#" onclick="openLayout(event, 'services')">Services</a>
+        <a class="layout-panel tablinks" href="#" onclick="openLayout(event, 'faq')">Faq</a>
+        <a class="layout-panel tablinks" href="#" onclick="openLayout(event, 'contact')">Contact</a>
+      </div>
+      <div class="popup__bg"> 
+        <form class="popup">
+          <a href="#" class="close-popup">&times;</a>
+            <label>
+              <input type="text" name="name" placeholder="scrieti aici">
+              <div class="label__text">Loghin</div>
+            </label>
+            <label>
+              <input type="password" name="tel">
+              <div class="label__text">Parola</div>
+            </label>
+            <div class="button">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+        </form>
+      </div>
+    <!-- Tab content -->
+    <!-- Tab content homepage -->
+     <div id="homepage" class="tabcontent"> 
+      <a href="https://www.marvel.com/" > 
+        <img class="img_marvel" src="img\marvel.png" width="100%" height="800" alt="Marvel"></p>      
+      </a>
+      <div class="list-group">
+        <div class="list-group-item list-header" data-name="spoiler-title">
+          Заголовок H2
         </div>
-    </form>
-  </div>
-  <a href="https://www.marvel.com/" > 
-    <img src="img\marvel.png" width="100%" height="800" alt="Marvel"></p>      
-  </a>
-  <div class="list-group">
-    <div class="list-group-item list-header" data-name="spoiler-title">
-      Заголовок H2
+        <div class="list-group-item list-content spoiler-body">
+          <h2>Первыми современными комиксами под брендом Marvel Comics были научно-фантастический антологический сборник « Путешествие в тайну»  № 69  и подростковый юмористический сериал « Пэтси Уокер № 95» (оба обложки датированы июнем 1961 года), на обложке каждого из которых была изображена коробка с надписью.  на волне успеха DC Comics в возрождении супергероев в конце 1950-х и начале 1960-х, особенно с Флэшем , Зеленым Фонарем , Бэтменом , Суперменом , Чудо-женщиной , Зеленой Стрелой и другими членами команды Лиги Справедливости Америки, Marvel последовала их примеру.
+        </div>
+        <div class="list-group-item list-header" data-name="spoiler-title">
+          Заголовок H3
+        </div>
+        <div class="list-group-item list-content spoiler-body">
+          <h3>В 1961 году писатель-редактор Стэн Ли произвел революцию в комиксах о супергероях , представив супергероев, предназначенных для читателей старшего возраста, а не преимущественно детской аудитории, тем самым положив начало тому, что Marvel позже назвала Marvel Age of Comics .  Первая команда супергероев Modern Marvel, главные звезды The Fantastic Four  (ноябрь 1961 г.),нарушил условности с другими архетипами комиксов того времени, ссорясь, затаив обиду, как глубокую, так и мелкую, и избегая анонимности или тайных личностей в пользу статуса знаменитости. Впоследствии комиксы Marvel заработали
+        </div>
+        <div class="list-group-item list-header" data-name="spoiler-title">
+          Заголовок H4
+        </div>
+        <div class="list-group-item list-content spoiler-body">
+          <h4>Репутацию компании, уделяющей больше внимания характеристикам и проблемам взрослых, чем большинство комиксов о супергероях до них, и это качество оценило новое поколение читателей старшего возраста.Это относится, в частности, к названию «Новый Человек-Паук », которое оказалось самой успешной книгой Marvel. Его юный герой страдал от неуверенности в себе и мирских проблем, как и любой другой подросток, с чем многие читатели могли себя идентифицировать. 
+        </div>
+        <div class="list-group-item list-header" data-name="spoiler-title">
+          Заголовок H5
+        </div>
+        <div class="list-group-item list-content spoiler-body">
+          <h5>Стэн Ли, художник-фрилансер и, в конечном итоге, соавтор сюжета Джека Кирби «Фантастическая четверка» зародились в культуре времен холодной войны , что побудило их создателей пересмотреть условности супергероев предыдущих эпох, чтобы лучше отразить психологический дух своего времени. Поначалу избегая таких тропов комиксов, как тайные личности и даже костюмы, имея монстра в качестве одного из героев, а его персонажи ссорятся и жалуются в том, что позже было названо подходом «супергероев в реальном мире», сериал представляет собой изменение, которое оказалось большим успехом. 
+        </div>
+        <div class="list-group-item list-header" data-name="spoiler-title">
+          Заголовок H6
+        </div> 
+        <div class="list-group-item list-content spoiler-body">
+          <h6>Marvel часто представляла несовершенных супергероев, уродов и неудачников — в отличие от идеальных, красивых, спортивных героев из предыдущих традиционных комиксов. Некоторые герои Marvel выглядели как злодеи и монстры, такие как Халк и Существо . Этот натуралистический подход распространился даже на актуальную политику. 
+        </div> 
+      </div>
+      <div class="go">
+        <a class="layout-panel" href="#">Previous</a>
+        <a class="layout-panel" href="#">Next</a>
+      </div>
     </div>
-    <div class="list-group-item list-content spoiler-body">
-      <h2>Первыми современными комиксами под брендом Marvel Comics были научно-фантастический антологический сборник « Путешествие в тайну»  № 69  и подростковый юмористический сериал « Пэтси Уокер № 95» (оба обложки датированы июнем 1961 года), на обложке каждого из которых была изображена коробка с надписью.  на волне успеха DC Comics в возрождении супергероев в конце 1950-х и начале 1960-х, особенно с Флэшем , Зеленым Фонарем , Бэтменом , Суперменом , Чудо-женщиной , Зеленой Стрелой и другими членами команды Лиги Справедливости Америки, Marvel последовала их примеру.
+    <!-- Tab content about -->
+    <div id="about" class="tabcontent"> 
+      <h1 class="title" align="center">ABOUT HEROES</h1>
+            <figure>
+               <a href="https://marvel.com.ru/heroes/star-lord">
+                  <img class="round" src="img\Star-lord.png" align="left">
+               </a>
+            </figure>
+            <h2>Питер Квилл — космический авантюрист, который живет бесконечными приключениями. Лидер команды «Стражи Галактики».
+               Питер Квилл родом с Земли, был воспитан матерью, которая умерла, когда он был еще ребенком. Личность отца неизвестна. Маленький Питер был похищен бандой космических пиратов под предводительством Йонду Удонта. Питер вырос среди них и сам стал бандитом, взяв себе псевдоним Звёздный Лорд.
+            </h2>  
+            <figure>
+               <a href="https://marvel.com.ru/heroes/rocket">
+                  <img class="round" src="img\Rocket.png" align="left" title="O imagine cu caine">
+               </a>
+            </figure>
+            <h3>За плечами кибернетически усовершенствованного енота Ракеты — отчаянные космические приключения и многочисленные нарушения закона. С ним лучше не шутить: Ракета очень умён, может сделать бомбу из ничего и очень не любит, когда над ним смеются.
+               Ракета обладает всеми особенностями обычного енота, такими как острый нюх и зрение.
+            </h3>
+            <figure>
+               <a href="https://marvel.com.ru/heroes/groot" target="_blank">     
+                  <img class="round" src="img\Groot.png" align="left">    
+               </a>
+            </figure>
+            <h4>Похожий на дерево пришелец Грут обладает невероятной физической силой, добрым сердцем и одной-единственной фразой в лексиконе.
+               Грут — древоподобный пришелец с планеты Икс, криминальное прошлое которого насчитывает 3 факта причинения тяжких телесных повреждений, 15 случаев побега из-под ареста и 3 факта наёмнической деятельности.Грут долгое время был напарником Ракеты в охоте за головами, но, когда они попытались схватить Питера Квилла на Ксандаре, их планы нарушила Гамора, и вся четвёрка была арестована Корпусом Нова. В тюрьме герои решили объединиться, чтобы заработать на продаже таинственной Сферы, украденной Квиллом с планеты Мораг. С помощью заключенного по имени Дракс Разрушитель и гениального плана, продуманного Ракетой, им удалось сбежать из тюрьмы.
+            </h4>
+            <figure>
+               <a href="https://marvel.com.ru/heroes/gamora" target="_blank">
+                  <img class="round" src="img\Gamora.png" align="left">    
+               </a>
+            </figure>  
+            <h5>Последняя выжившая представительница расы Зен-Хобери, Гамора была удочерена безумным титаном Таносом и всю жизнь готовилась стать убийцей. Не желая способствовать злу, она предала своего приёмного отца и теперь использует свои способности, чтобы помогать слабым вместе с командой «Стражи Галактики».Когда Звёздный Лорд украл один из Камней Бесконечности, могущественную Сферу, опередив Ронана, одного из самых опасных подручных Таноса, Гамора вызвалась вернуть её. При попытке перехватить артефакт, она попала в потасовку с участием Грута, Ракеты и самого Звёздного Лорда, из-за которой все четверо были арестованы Корпусом Нова.
+            </h5>
+            <figure>
+               <a href="https://marvel.com.ru/heroes/drax" target="_blank">     
+               <img class="round" src="img\Dracks.png" align="left">
+               </a>
+            </figure>
+            <h6>Когда Ронан по приказу безумного титана Таноса хладнокровно убил его жену и дочь, Дракс поклялся отомстить за свою семью. Он успел заработать себе репутацию вселенского маньяка и прозвище Разрушитель, пока не был арестован Корпусом Нова. В тюрьме строгого режима Килн он прибился к группе заключённых, затеявших побег. Среди них была Гамора, приёмная дочь Таноса, и Дракс планировал, что она выведет его на Ронана.
+                Когда Дракс, наконец, встретился с Ронаном один на один, он проиграл ему и чуть не погиб. Однако это поражение помогло ему пересмотреть свои приоритеты: отодвинув личную месть на второй план, он решил присоединиться к «Стражам Галактики», чтобы защитить от Ронана вселенную.
+            </h6>    
+            </section>     
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <a type="none">
+              <h1 align="center">
+            <a class="scroll" href="Home.html">Previous</a>
+            <a class="scroll" href="Services.html">Next</a>
+            </h1>
     </div>
-    <div class="list-group-item list-header" data-name="spoiler-title">
-      Заголовок H3
+    <!-- Tab content services -->
+    <div id="services" class="tabcontent"> 
+      <h1 class="title" align="center">Service heroes</h1>   
+        <a href="https://glovoapp.com/md/ru/kishinyov/" target="_blank">
+        <img src="img\marvel2.png" width="100%" align="top">
+        </a>
+      <h2>Отряд Мстителей победили всю нечисть на земле и в пределах их досегаемости,благодаря Железному человеку мы победили Таноса и вернули всех своих родных обратно благодаря Халку и человеку муравью. Но опасность возникла откуда не было ожидать. Из за слишком спокойнова мира наши герой остались без работы и теперь у них закончились денги.
+      </h2>
+      <h3>В отчаянных поисках подходящей работы что бы приносить пользу общевству и делать добро,ведь они созданы для этого,Капитан Америка решаеться на неожиданный поступок,он устраиваеться на работу в "GLOVO" и его друзья и соратники(Черная вдова,Черная пантера и его лучшии друг Баки Барнс) поддерживают его и вместе с ним устариваються курьерами ведь это благородная работа,приносить людям еду в любое время года,в любых погодных условиях,а самое главное:Быстро,Качественно и недорого
+      </h3>
+      <h4>Glovo was launched in early 2015 by Oscar Pierre and Sacha Michaud. Oscar, after studying at Georgia Tech and seeing the emerging on-demand economy in the US,came back to his hometown of Barcelona to start his own company, where he met Sacha, a seasoned tech entrepreneur. Since then, Glovo has launched in 23 countries and over 900 cities worldwide. Today, it is the largest on-demand platform founded out of mainland Europe, having delivered over 255M orders.came back to his hometown of Barcelona to start his own company, where he met Sacha, a seasoned tech entrepreneur. Since then, Glovo has launched in 23 countries and over 900 cities worldwide. Today, it is the largest on-demand platform founded out of mainland Europe, having delivered over 255M orders.
+      </h4> 
+      <h5>Компания была основана Оскаром Пьером Микелем , который в настоящее время является генеральным директором, и Сашей Мишо, который является соучредителем. 
+          Со временем компания расширилась на другие страны. В январе 2020 года Glovo прекратила свою деятельность в Турции, Египте, Пуэрто-Рико и Уругвае. 
+          В октябре 2020 года, стремясь добиться прибыльности, оставшиеся операции Glovo в Латинской Америке были приобретены немецкой компанией Delivery Hero по сделке на сумму 272 миллиона долларов США, в результате чего у Glovo остались только операции в Южной и Восточной Европе.На данный момент являеться одной из самой большой организации по доставке продуктов
+      </h5>
+      <h6>Служба доставки еды остается самой популярной услугой компании. Другие услуги, доступные в приложении, включают бакалею, аптеку, десерты, курьера и Quiero (что угодно). 
+          Пищевой бизнес позволяет пользователям находить и размещать заказы в своих любимых ресторанах, которые забираются по мере готовности и доставляются к порогу пользователя. Хотя эта модель продолжает оставаться флагманским сервисом, компания, как сообщается, экспериментирует с CloudKitchens и Grocery Darkstores.
+      </h6>
+      <table width="100%" border="1" bordercolor="aqua">
+        <tr>
+          <th colspan="5" bgcolor="red">1a</th>
+        </tr>
+        <tr>
+          <td>2a</td>
+          <td>2b</td>
+          <td>2c</td>
+          <td>2d</td>
+          <td>2e</td>
+        </tr>
+        <tr>
+          <td>3a</td>
+          <td>3b</td>
+          <td>3c</td>
+          <td>3d</td>
+          <td>3e</td>
+        </tr>
+        <tr>
+          <td>4a</td>
+          <td>4b</td>
+          <td>4c</td>
+          <td>4d</td>
+          <td>4e</td>
+        </tr>
+        <tr>
+          <td>5a</td>
+          <td>5b</td>
+          <td>5c</td>
+          <td>5d</td>
+          <td>5e</td> 
+        </tr>
+      </table>
+        <br>
+        <br>
+      <table width="99%" border="3" bordercolor="blue">
+        <tr>
+          <th>1a</th>
+          <th>1b</th>
+          <th>1c</th>
+          <th>1d</th>
+          <th rowspan="5" bgcolor="yelow">1e</th>
+        </tr>
+        <tr>
+          <td>2a</td>
+          <td>2b</td>
+          <td>2c</td>
+          <td>2d</td>
+        </tr>
+        <tr>
+          <td>3a</td>
+          <td>3b</td>
+          <td>3c</td>
+          <td>3d</td>
+        </tr>
+        <tr>
+          <td>4a</td>
+          <td>4b</td>
+          <td>4c</td>
+          <td>4d</td>
+        </tr>
+        <tr>
+          <td>5a</td>
+          <td>5b</td>
+          <td>5c</td>
+          <td>5d</td>
+        </tr>
+      </table>
+        <br>
+        <br>
+      <table width="98%" border="3" bordercolor="green">
+        <tr>
+          <th>1a</th>
+          <th>1b</th>
+          <th>1c</th>
+          <th>1d</th>
+          <th>1e</th>
+        </tr>
+        <tr>
+          <td>2a</td>
+          <td>2b</td>
+          <td>2c</td>
+          <td>2d</td>
+          <td>2e</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="3" bgcolor="green">3a</td>
+          <td>3c</td>
+          <td>3d</td>
+          <td>3e</td>
+        </tr>
+        <tr>
+          <td>4c</td>
+          <td>4d</td>
+          <td>4e</td>
+        </tr>
+        <tr>
+          <td>5c</td>
+          <td>5d</td>
+          <td>5e</td>
+        </tr>
+      </table>
+        <br>
+        <br>
+      <table width="97%" border="3" bordercolor="aqua">
+        <tr>
+          <th>1a</th>
+          <th>1b</th>
+          <th>1c</th>
+          <th>1d</th>
+          <th>1e</th>
+        </tr>
+        <tr>
+          <td>2a</td>
+          <td colspan="3" rowspan="3" bgcolor="white">2b</td>
+          <td>2e</td>
+        </tr>
+        <tr>
+          <td>3a</td>
+          <td>3e</td>
+        </tr>
+        <tr>
+          <td>4a</td>
+          <td>4e</td>
+        </tr>
+        <tr>
+          <td>5a</td>
+          <td>5b</td>
+          <td>5c</td>
+          <td>5d</td>
+          <td>5e</td>
+        </tr>
+      </table>
+        <br>
+        <br>
+      <table width="96%" border="1" bordercolor="black">
+        <tr>
+          <th colspan="3" rowspan="2" bgcolor="yellow">1a</th>
+          <th>1d</th>
+          <th>1e</th>
+        </tr>
+        <tr>
+          <td>2d</td>
+          <td>2e</td>
+        </tr>
+        <tr>
+          <td>3a</td>
+          <td>3b</td>
+          <td>3c</td>
+          <td colspan="2" rowspan="3" bgcolor="yellow">3d</td>
+        </tr>
+        <tr>
+          <td>4a</td>
+          <td>4b</td>
+          <td>4c</td>
+        </tr>
+        <tr>
+          <td>5a</td>
+          <td>5b</td>
+          <td>5c</td> 
+        </tr>
+      </table>
+      <a type="none">
+        <h1 align="center">
+      <a class="scroll" href="Home.html">Previous</a>
+      <a class="scroll" href="Services.html">Next</a>
+      </h1>
     </div>
-    <div class="list-group-item list-content spoiler-body">
-      <h3>В 1961 году писатель-редактор Стэн Ли произвел революцию в комиксах о супергероях , представив супергероев, предназначенных для читателей старшего возраста, а не преимущественно детской аудитории, тем самым положив начало тому, что Marvel позже назвала Marvel Age of Comics .  Первая команда супергероев Modern Marvel, главные звезды The Fantastic Four  (ноябрь 1961 г.),нарушил условности с другими архетипами комиксов того времени, ссорясь, затаив обиду, как глубокую, так и мелкую, и избегая анонимности или тайных личностей в пользу статуса знаменитости. Впоследствии комиксы Marvel заработали
+    <!-- Tab content faq -->
+    <div id="faq" class="tabcontent"> 
+      <h1 align="center"><font color="yellow" size="10"><a class="panel panel_question" href="#summary">Часто задаваемые вопросы</a></font></h1>
+      <p align="center">
+        <a href="https://glovoapp.com/md/ru/kishinyov/" target="_blank">
+         <img class="glovo" src="https://www.finansmax.net/wp-content/uploads/2020/08/glovo-m%C3%BC%C5%9Fteri-hizmetleri.png">
+        </a>
+      </p>  
+      <br>
+      <details id="summary">
+        <summary>Ce inseamna sa fii curier Glovo?</summary>
+          <h2>Curierii Glovo sunt utilizatori care doresc să le facă viața mai ușoară celorlalți, livrându-le ce au nevoie, atunci când au nevoie. Sunt profesioniști independenți care aleg să efectueze livrări în intervale orase programate anterior, folosind propriul vehicul.</h2>  
+      </details>
+      <details>
+        <summary>Care este procesul?</summary>
+          <h3> Procedura este simplă și rapidă. Trebuie doar să te înregistrezi pe această pagină, să urmărești o scurtă sesiune online de informare și trimiți documentele solicitate. Apoi, după ce ai un rucsac izotermic și înveți cum să folosești aplicația Glovo Couriers, ești gata să începi să livrezi cu noi!</h3>
+      </details>
+      <details>
+        <summary>Ce oferă Glovo?</summary>
+          <h4> Glovo îți oferă o modalitate plăcută de a face bani în timp ce te bucuri de orașul tău și petreci mai mult timp cu alți oameni. Flexibilitatea serviciilor noastre îți oferă libertatea de a-ți alege orele de colaborare și de a-ți genera venituri în timpul tău liber.</h4>
+      </details>
+      <details>
+        <summary>sunt cerințele necesare pentru a livra cu Glovo?</summary>
+          <h5>Pentru a-ți putea oferi serviciile de curier va trebui să semnezi contractul nostru și să respecți reglementările din regiunea ta privind activitățile independente. De asemenea, vei avea nevoie de un vehicul personal și să ai vârsta minimă legală.</h5>
+      </details>
+      <details>
+        <summary>Comentariile autorului</summary>  
+          <h6>mai departe nustiu ce sa scriu mi s-au terminat ideile,nu ii atat de greu sa faci textu da nu mam asteptat ca nu o sa-mi vina idei ce sa scriu</h6>  
+      </details>
+      <a type="none">
+        <h1 align="center">
+      <a class="scroll" href="Home.html">Previous</a>
+      <a class="scroll" href="Services.html">Next</a>
+      </h1>    
     </div>
-    <div class="list-group-item list-header" data-name="spoiler-title">
-      Заголовок H4
+    <!-- Tab content contact -->
+    <div id="contact" class="tabcontent"> 
+      <p align="center">
+        <a href="https://youtu.be/L6l6xBVH6j0" target="_blank">
+          <img src="https://i.pinimg.com/originals/19/c0/81/19c081c2b444d78886adff3a06e7e540.jpg">
+         </a>
+      </p>  
+      <h1><li>Am ajuns aproape la finalul lucrarii mele de acasa nustiu ce nota voi primi,mam straduit cum am putut.Da,undeva am pus mai putin text de cat trebuia,undeva am pus mai mult text decat trebuia,banuiesc ca asta a fost facut mai tare sa vedeti cat de bine indeplinim cerintele voastre  
+      </li></h1>
+      <h2><li>In general cred eu ca cu cerintele obligatorii mam descurcat nu era asa de greu,doar ca asta am facut incet si treceam inca o data cu ochii ca sa nu scap ceva de aia si ea asa mult timp sa fac asta dar in fine,doar cu asta capeti skillu ca sa scrii coduri cat mai rapid posibil.Recunosc,unele informatii pur simpu am facut copy-paste ca deam vedem ca pre mult timp imi ia si mai am si lucru meu general,nu zic, daca mi-am luat responsabilitatea  trebuie sa scriu si sa nu ma plang da asta e,lenea si ведьмак 3 ma invinge pana cand
+      </li></h2>
+      <h3><li>Mai in scurt de ce scriu asta aici.Cestna govoria pur simplu mi s-au terminat ideile ce sa mai scriu.Pe fotografie cand apasati este un link de muzica,nustiu mie imi zahadeste ca o muzica relaxanta eu cred ca e destul de buna puteti sa o ascultati si voi sa kaifuiti oleaca 
+      </li></h3>
+      <fieldset style="border: #791056 ridge thick;">  
+        <legend> <b><span style="color:#790b42;font-size:25px;">Loghin data</b></span></legend>
+          <form action="Login data">
+            <div>
+              Loghinu:
+              <input type="text" name="login" placeholder="scrieti aici">
+            </div>
+            <div>
+              Parola:
+              <input type="password" name="parola">
+            </div>
+            <div>
+              secret question
+              <input type="text" name="question" placeholder="scrieti aici">
+              Secret answer<input type="password" name="answer" placeholder="scrieti aici">
+            <br> 
+            <div>
+              <input type="submit" value="Logheaza">
+              <input type="reset" value="Sterge tot"> 
+            <div>                         
+          </form>
+      </fieldset>
+      <fieldset style="border: #1874CD ridge thick;">  
+        <legend> <b><span style="color:#104E8B;font-size:25px;">Personal data</b></span></legend>
+            <div>
+              <h2><li>Nivelul de studii:</li></h2> 
+              <label for="varianta-1">Gimnaziu</label>
+              <input id="varianta-1" type="checkbox" name="varianta" value="varianta-1">
+              <label for="varianta-2">Liceu</label>
+              <input id="varianta-2" type="checkbox" name="varianta" value="varianta-2">
+              <label for="varianta-3">Colegiu</label>
+              <input id="varianta-3" type="checkbox" name="varianta" value="varianta-3">
+              <label for="varianta-4">Universitate</label>
+              <input id="varianta-4" type="checkbox" name="varianta" value="varianta-4">
+              <label for="alt">Alt</label>
+              <textarea name="alt" id="alt" cols="7" rows="3"></textarea>      
+            </div>
+            <div>
+              <h2><li>Locul de munca:</li></h2>
+              <label for="nr_1">Electric<label>
+              <input id="nr_1" type="radio" name="locul de munca" value="locul de munca-Electric">
+              <label for="nr_2">Medic<label>
+              <input id="nr_2" type="radio" name="locul de munca" value="locul de munca-Medic">
+              <label for="form-bio">Alt</label>
+              <textarea name="bio" id="form-bio" cols="7" rows="3"></textarea>
+            </div>
+            <div>
+              <label for="form-bio"><h2><li>Biografie:</li></h2></label>
+              <textarea name="bio" id="form-bio" cols="12" rows="10"></textarea>
+            </div>
+            <div>
+              <label for="Cv"><h2><li>Cv:</li></h2></label>
+            <div>
+              <p><input type="file" multiple="multiple"></p>
+            </div>
+            <div>
+              <h2><li>Hobby:</li></h2>
+              <select name="hobby" id="form-hobby">
+                <optgroup label="Indoors">
+                  <option value="Front end">front end</option>
+                  <option value="Back end">back end</option>
+                </optgroup>
+                <optgroup label="Outdoors">
+                  <option value="cars">Car and Engines</option>
+                  <option value="sports">Football</option>
+                </optgroup>
+              </select>
+            </div>
+            <div>
+              <h2><li>Starea civila:</li></h2>
+              <label for="casatorit">Casatorit<label>
+              <input id="casatorit" type="radio" name="starea civila" value="starea civila-casatorit">
+              <label for="necasatorit">Necasatorit<label>
+              <input id="necasatorit" type="radio" name="starea civila" value="starea civila-necasatorit">
+              <label for="divortat">Divortat<label>
+              <input id="divortat" type="radio" name="starea civila" value="starea civila-divortat">
+            </div>
+            <div>
+              <h2><li>Situatia militara:</li></h2>
+              <select name="atkasil" id="form-armata">
+              <optgroup label="atkasil">
+                <option value="atkasil">cu bani</option>
+                <option value="atkasil">nanu lucreaza acolo</option>
+              </optgroup>
+            <optgroup label="m-o prins"></optgroup>
+              <option value="atkasil">Am facut</option>
+            </div>
+            <div>  
+              <label for="varianta-2">Nu</label>
+              <input id="varianta-2" type="checkbox" name="varianta" value="varianta-2">
+              <label for="varianta-3">Catedra militara</label>
+              <input id="varianta-3" type="checkbox" name="varianta" value="varianta-3">
+              <label for="alt">Alt</label>
+              <textarea name="alt" id="alt" cols="7" rows="3"></textarea>      
+            </div>
+            <div>
+              <h2><li>Limbi vorbite:</li></h2>  
+              <label for="varianta-1">Germana</label>
+              <input id="varianta-1" type="checkbox" name="varianta" value="varianta-1">
+              <label for="varianta-2">Engleza</label>
+              <input id="varianta-2" type="checkbox" name="varianta" value="varianta-2">
+              <label for="varianta-3">Romana</label>
+              <input id="varianta-3" type="checkbox" name="varianta" value="varianta-3">
+              <label for="varianta-4">Rusa</label>
+              <input id="varianta-4" type="checkbox" name="varianta" value="varianta-4">
+              <label for="alt">Alt</label>
+              <textarea name="alt" id="alt" cols="7" rows="3"></textarea>      
+            </div>
+             <div>
+              <h2><li>Sexul:</li></h2>
+              <label for="sex-m">M -<label>
+              <input id="sex-m" type="radio" name="sexul" value="sexul-m">
+              <label for="sex-f">F -<label>
+              <input id="sex-f" type="radio" name="sexul" value="sexul-f">
+            </div>
+            <div>
+              <h2><li>Varsta:</li></h2>
+              <input type="number" name="Varsta">
+            </div>  
+      </fieldset>
+
+        <h1 align="center">
+          <a href="FAQ.html">Previous</a>
+          <a href="index.html">Next</a>
+        </h1>
+        </h1> 
     </div>
-    <div class="list-group-item list-content spoiler-body">
-      <h4>Репутацию компании, уделяющей больше внимания характеристикам и проблемам взрослых, чем большинство комиксов о супергероях до них, и это качество оценило новое поколение читателей старшего возраста.Это относится, в частности, к названию «Новый Человек-Паук », которое оказалось самой успешной книгой Marvel. Его юный герой страдал от неуверенности в себе и мирских проблем, как и любой другой подросток, с чем многие читатели могли себя идентифицировать. 
-    </div>
-    <div class="list-group-item list-header" data-name="spoiler-title">
-      Заголовок H5
-    </div>
-    <div class="list-group-item list-content spoiler-body">
-      <h5>Стэн Ли, художник-фрилансер и, в конечном итоге, соавтор сюжета Джека Кирби «Фантастическая четверка» зародились в культуре времен холодной войны , что побудило их создателей пересмотреть условности супергероев предыдущих эпох, чтобы лучше отразить психологический дух своего времени. Поначалу избегая таких тропов комиксов, как тайные личности и даже костюмы, имея монстра в качестве одного из героев, а его персонажи ссорятся и жалуются в том, что позже было названо подходом «супергероев в реальном мире», сериал представляет собой изменение, которое оказалось большим успехом. 
-    </div>
-    <div class="list-group-item list-header" data-name="spoiler-title">
-      Заголовок H6
-    </div> 
-    <div class="list-group-item list-content spoiler-body">
-      <h6>Marvel часто представляла несовершенных супергероев, уродов и неудачников — в отличие от идеальных, красивых, спортивных героев из предыдущих традиционных комиксов. Некоторые герои Marvel выглядели как злодеи и монстры, такие как Халк и Существо . Этот натуралистический подход распространился даже на актуальную политику. 
-    </div> 
-  </div>
-  <div class="go">
-    <a class="layout-panel" href="#">Previous</a>
-    <a class="layout-panel" href="#">Next</a>
-  </div>
 </div>
   <!-- Second site && layout2.scss -->
   <div class="content" id="sect2">
@@ -571,13 +993,7 @@
         <button>h2</button>
       </div>
       <hr>
-
     </div>
-    
-  
-  
-  
-  
   </div> 
  <!-- Buttons -->
   <div class="content" id="ui3"> 
