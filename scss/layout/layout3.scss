@@ -1,0 +1,383 @@
+.header_panel {
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+.header_panel_text {
+  margin-right: 70px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header_panel_text:hover {
+  text-decoration:underline;
+  color: yellow;
+}
+
+.header_panel_icon_1 {
+  margin-right: 100px;
+  text-decoration: none;
+}
+
+.header_panel_icon_2 {
+  margin-left: 40px;
+  margin-right: 120px;
+  text-decoration: none;
+}
+
+.header_panel_icon_3 {
+  margin-top: 40px;
+  margin-left: 80px;
+  text-decoration: none;
+}
+
+.header_line {
+  width: 100%;
+}
+
+.title {
+  color: #FFFFFF;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 300px;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.scroll {
+  color: #FFFFFF;
+  margin-top: 150px;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.scroll_icon {
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.scroll_href {
+  color: #FFFFFF;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration: none;
+}
+
+.header_right {
+  background-color: #111111;
+}
+
+.header_right_text_p {
+  color: #fff;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 246px;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.header_contact {
+  color: #FFFFFF;
+  margin-left: 80px;  
+  margin-right: 80px;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.header_contact_number {
+  color: #FFFFFF;
+  margin-left: 80px;
+  margin-right: 80px;  
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.icon_virgul {
+  margin-top: 200px;
+  margin-left: 50%;
+  margin-bottom: 50px;
+}
+
+.text_about {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 130%;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.service_foto {
+  margin-right: 44px;
+  -o-transform: translate(-20px, 20px);
+  -ms-transform: translate(-20px, 20px);
+  -moz-transform: translate(-20px, 20px);
+  -webkit-transform: translate(-20px, 20px);
+  transform: translate(-20px, 20px); 
+}
+
+.service_text {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.service_border {
+  box-sizing: border-box;
+  width: 396px;
+  height: 300px;
+  left: 772px;
+  top: 1638px;
+  opacity: 0.5;
+  border: 1px solid #CDAA7D;
+  display: inline-block;
+  margin: 0 40px 2em 0;
+}
+
+.icon_panel {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.our_work_text {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.our_work_panel {
+  text-align: center;
+}
+
+.our_work_panel_name {
+  margin-right: 70px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.our_work_panel_name:hover {
+  text-decoration:underline;
+  color: yellow;
+}
+
+.our_work_img {
+  text-align: center;
+}
+
+.our_work_img_align {
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+.bottom_body {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.line_body {
+  width: 70%;
+  margin-top: 100px;
+  border: 1px solid #FFFFFF;
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.vector {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    text-align: center;
+  }
+  .our_work_panel_name {
+    display: flex;
+  }
+  .bottom_body:not(.show) {
+    display: block;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header_panel {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.header_panel_text {
+  margin-right: 70px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header_panel_text:hover {
+  text-decoration:underline;
+  color: yellow;
+}
+
+.header_panel_icon_1 {
+  margin-right: 100px;
+  text-decoration: none;
+}
+.header_panel_icon_2 {
+  margin-left: 40px;
+  margin-right: 120px;
+  text-decoration: none;
+}
+
+.header_panel_icon_3 {
+  margin-top: 40px;
+  margin-left: 80px;
+  text-decoration: none;
+}
+
+.header_line {
+  width: 50%;
+}
+
+.burger {
+  position: relative;
+  width: 90px;
+  height: 96px;
+  font-size: 0;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.burger span::before, .burger span::after {
+  position: absolute;
+  display: block;
+  left: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+}
+
+.burger span::before {
+  top: -15px;
+}
+
+.burger span::after {
+  bottom: -15px;
+}
+
+.burger-line {
+  background-color: #111111;
+}
+
+.burger-line span {
+  transition: background 0s 0.3s;
+}
+
+.burger-line span::before, .burger-line span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.burger-line span::before {
+  transition-property: top, transform;
+}
+
+.burger-line span::after {
+  transition-property: bottom, transform;
+}
+
+.burger-line.is-active span {
+  background: none;
+}
+
+.burger-line.is-active span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-line.is-active span::after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+.burger-line.is-active span::before, .burger-line.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+#menu {
+  margin-left: -190px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease 1s;
+  z-index: 9999;
+}
+
+#menu.nav-active {
+  margin: 0; 
+ }

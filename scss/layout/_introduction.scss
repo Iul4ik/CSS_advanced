@@ -1,0 +1,58 @@
+.content1 {
+  width: 100%;
+  display: block;
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Style the tab */
+.tab {
+  display: flex;
+  width: 100%;
+
+  /* Style the buttons that are used to open the tab content */
+  button {
+    background-color: inherit;
+    float: left;
+    margin-top: 50px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(15, 13, 110);
+  }
+  
+  /* Change background color of buttons on hover */
+  button:hover {
+    background-color: grey;
+  }
+  
+  /* Create an active/current tablink class */
+  button.active {
+    color: red;
+  }
+
+  .tab_right {
+    display: flex;
+    margin-left: 50%;
+  }
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    color: gray;
+  }
+}
