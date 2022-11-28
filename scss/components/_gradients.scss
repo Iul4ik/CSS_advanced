@@ -1,0 +1,113 @@
+.gradient-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: green;
+}
+
+.gradient-box--1 {
+  background: linear-gradient(to left,blue 50%, red 50%);
+}
+
+.gradient-box--2 {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.gradient-box--3 {
+  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+.gradient-box--4 {
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+.gradient-box--5 {
+  background: linear-gradient(45deg, blue, red);
+}
+.gradient-box--6 {
+  background: linear-gradient(to left top, blue, red);
+}
+
+.gradient-box--7 {
+  background: linear-gradient(0deg, blue, green 40%, red);
+}
+
+.gradient-box--8 {
+  background: linear-gradient(.25turn, red, 10%, blue);
+}
+
+.gradient-box--9 {
+  background: linear-gradient(45deg, red 0 50%, blue 50% 100%);
+}
+
+.gradient-box--10 {
+  background:  linear-gradient(red, orange, yellow, green, blue);
+}
+
+.gradient-box--11 {
+  background:  linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+}
+
+.gradient-box--12 {
+  background:  linear-gradient(red 10%, 30%, blue 90%);
+}
+
+.gradient-box--13 {
+  background:  linear-gradient(red 40%, yellow 30%, blue 65%);
+}
+
+.gradient-box--14 {
+  background:  linear-gradient(red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
+  background:  linear-gradient(red, orange 10% 30%, yellow 50% 70%, green 90%);
+  background:  linear-gradient(red 0%, orange 10% 30%, yellow 50% 70%, green 90% 100%);
+}
+
+.gradient-box--15 {
+}
+
+.gradient-box--16 {
+  background: linear-gradient(45deg, red, blue);
+}
+
+.gradient-box--17 {
+  background: linear-gradient(135deg, orange 60%, cyan);
+}
+
+.gradient-box--18 {
+  background: linear-gradient(
+    to right,
+    red 20%,
+    orange 20% 40%,
+    yellow 40% 60%,
+    green 60% 80%,
+    blue 80%
+  );
+}
+
+.gradient-box--19 {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.gradient-box--20 {
+  border-radius: 35%;
+  background: rgb(109,157,34);
+  background: radial-gradient(circle, rgba(109,157,34,1) 0%, rgba(35,50,182,1) 5%, rgba(231,143,36,1) 10%, rgba(35,50,182,1) 15%, rgba(109,157,34,1) 20%, rgba(35,50,182,1) 25%, rgba(231,143,36,1) 30%, rgba(35,50,182,1) 35%, rgba(109,157,34,1) 40%, rgba(35,50,182,1) 45%, rgba(231,143,36,1) 50%, rgba(35,50,182,1) 55%, rgba(109,157,34,1) 60%, rgba(35,50,182,1) 65%, rgba(231,143,36,1) 70%, rgba(35,50,182,1) 75%, rgba(109,157,34,1) 80%, rgba(35,50,182,1) 85%, rgba(231,143,36,1) 90%, rgba(35,50,182,1) 95%, rgba(109,157,34,1) 100%);
+  animation:spin 4s linear infinite;
+}
+// @-moz-keyframes spin { 
+//   100% { -moz-transform: rotate(360deg); } 
+// }
+// @-webkit-keyframes spin { 
+//   100% { -webkit-transform: rotate(360deg); } 
+// }
+@keyframes spin { 
+  100% { 
+      // -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}

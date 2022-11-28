@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css\main.css">
 </head>
 <body>
+  <!-- Header panel Search -->
   <div class="header_panel">
     <div class="left">
       <input class="input" type="text" placeholder="     Search the docs...">
@@ -23,6 +24,7 @@
       <img src="icon\Desktop.svg" alt="">
     </div>
   </div>
+  <!-- accordion style left bar -->
   <div class="accordion">
     <div class="accordion_content">
       <button class="link btn-style" onclick="showContent(event,'introduction')">Introduction</button>
@@ -41,9 +43,9 @@
       <button class="link btn-style" onclick="showContent(event,'voice')">Voice & Tone</button>
       <button class="down">UI Components</button>
       <div class="panel">
-        <button class="link panel_link"  onclick="showContent(event,'ui1')">Grid System</button>
-        <button class="link panel_link"  onclick="showContent(event,'ui2')">Typography</button> 
-        <button class="link panel_link"  onclick="showContent(event,'ui3')">Buttons</button>
+        <button class="link panel_link"  onclick="showContent(event,'ui1')">Filters</button>
+        <button class="link panel_link"  onclick="showContent(event,'ui2')">Gradient</button>
+        <button class="link panel_link"  onclick="showContent(event,'ui3')">Typography</button> 
         <button class="link panel_link"  onclick="showContent(event,'ui4')">Color Palette</button>
         <button class="link panel_link"  onclick="showContent(event,'ui5')">Breadcrumbs</button>
         <button class="link panel_link"  onclick="showContent(event,'ui6')">Forms</button>
@@ -94,7 +96,7 @@
     <!-- Visual Style && atentie color by default este alb -->
     <!-- Visual Style Section1 -->
     <div class="content" id="firstsection">
-      <p style="color: black;">Prima sectiune</p>
+      <p>asdas</p>
     </div>
     <!-- Visual Style Section2 -->
     <div class="content" id="secondsection">
@@ -131,8 +133,8 @@
             </div>
         </form>
       </div>
-    <!-- Tab content -->
-    <!-- Tab content homepage -->
+    <!-- First site && _layout1.scss Tab content -->
+    <!-- First site && _layout1.scss Tab content homepage -->
      <div id="homepage" class="tabcontent"> 
       <a href="https://www.marvel.com/" > 
         <img class="img_marvel" src="img\marvel.png" width="100%" height="800" alt="Marvel"></p>      
@@ -174,7 +176,7 @@
         <a class="layout-panel" href="#">Next</a>
       </div>
     </div>
-    <!-- Tab content about -->
+    <!-- First site && _layout1.scss Tab content about -->
     <div id="about" class="tabcontent"> 
       <h1 class="title" align="center">ABOUT HEROES</h1>
             <figure>
@@ -230,7 +232,7 @@
             <a class="scroll" href="Services.html">Next</a>
             </h1>
     </div>
-    <!-- Tab content services -->
+    <!-- First site && _layout1.scss Tab content services -->
     <div id="services" class="tabcontent"> 
       <h1 class="title" align="center">Service heroes</h1>   
         <a href="https://glovoapp.com/md/ru/kishinyov/" target="_blank">
@@ -417,7 +419,7 @@
       <a class="scroll" href="Services.html">Next</a>
       </h1>
     </div>
-    <!-- Tab content faq -->
+    <!-- First site && _layout1.scss Tab content faq -->
     <div id="faq" class="tabcontent"> 
       <h1 align="center"><font color="yellow" size="10"><a class="panel panel_question" href="#summary">Часто задаваемые вопросы</a></font></h1>
       <p align="center">
@@ -452,7 +454,7 @@
       <a class="scroll" href="Services.html">Next</a>
       </h1>    
     </div>
-    <!-- Tab content contact -->
+    <!-- First site && _layout1.scss Tab content contact -->
     <div id="contact" class="tabcontent"> 
       <p align="center">
         <a href="https://youtu.be/L6l6xBVH6j0" target="_blank">
@@ -957,15 +959,160 @@
   </div> 
   </div>
   <!-- Ui Components   -->
-  <!-- Grid System -->
+  <!-- Ui Components Filters -->
   <div class="content" id="ui1"> 
     <div class="box_title">
       <p>UI Components</p>
-      <h1>Grid System</h1>
+      <h1>Filters</h1>
     </div>
-  </div> 
- <!-- Typography -->
+    <div class="section" id="Filters">
+      <!-- <h2 class="section__title">Filters</h2> -->
+      <div class="section__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--blur">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--brightness">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--contrast">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--drop-shadow">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--grayscale">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--hue-rotate">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--invert">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--opacity">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--saturate">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--sepia">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--none">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--inherit">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--initial">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--revert">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--revert-layer">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--unset">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--multiple-1">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--multiple-2">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--multiple-3">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="filter-box filter-box--multiple-4">
+                <img src="img\filter.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+ <!-- UI Components Gradient -->
   <div class="content" id="ui2"> 
+    <div class="box_title">
+      <p>UI Components</p>
+      <h1>Gradient</h1>
+    </div>
+    <div class="section" id="gradient">
+      <div class="section__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4"><div class="gradient-box gradient-box--1"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--2"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--3"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--4"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--5"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--6"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--7"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--8"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--9"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--10"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--11"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--12"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--13"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--14"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--15"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--16"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--17"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--18"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--19"></div></div>
+            <div class="col-lg-4"><div class="gradient-box gradient-box--20"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- UI Components Typografy -->
+  <div class="content" id="ui3"> 
     <div class="box_title">
       <p>UI Components</p>
       <h1>Typography</h1>
@@ -977,7 +1124,7 @@
         <a class="box_link" href="#">Heading</a>
         <a class="box_link" href="#">Styles</a>
         <a class="box_link" href="#">Line</a>
-        <a class="box_link" href="#">Height</a>
+        <a class="box_link" href="#">Height</a> 
       </div>
     </div>
     <div class="box_heading">
@@ -993,13 +1140,6 @@
         <button>h2</button>
       </div>
       <hr>
-    </div>
-  </div> 
- <!-- Buttons -->
-  <div class="content" id="ui3"> 
-    <div class="box_title">
-      <p>UI Components</p>
-      <h1>Buttons</h1>
     </div>
  </div> 
  <!-- Color Palette -->

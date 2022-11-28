@@ -1,0 +1,182 @@
+.section {
+  // background-color: aqua;
+  
+  .row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.filter-box {
+  img {
+    width: 300px;
+    margin-top: 20px;
+  }
+}
+
+.filter-box--blur {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  } 
+}
+
+.filter-box--brightness {
+  &:hover {
+    img {
+      filter: brightness(0.2);
+    }
+  }
+}
+
+.filter-box--contrast {
+  &:hover {
+    img {
+      filter: contrast(20%);
+    }
+  }
+}
+
+.filter-box--drop-shadow {
+  &:hover {
+    img {
+      filter: drop-shadow(0px 0px 10px blue);
+    }
+  }
+}
+
+.filter-box--grayscale {
+  &:hover {
+    img {
+      filter: grayscale(100%);
+    }
+  } 
+}
+
+.filter-box--hue-rotate {
+  &:hover {
+    img {
+      filter: hue-rotate(260deg);
+    }
+  } 
+}
+
+.filter-box--invert {
+  &:hover {
+    img {
+      filter: invert(75%);
+    }
+  }
+}
+
+.filter-box--opacity {
+  &:hover {
+    img {
+      filter: opacity(35%);
+    }
+  }
+}
+
+.filter-box--saturate {
+  &:hover {
+    img {
+      filter: saturate(10%);
+    }
+  }
+}
+
+.filter-box--sepia {
+  &:hover {
+    img {
+      filter: sepia(100%);
+    }
+  }
+}
+
+.filter-box--none {
+  &:hover {
+    img {
+      filter: none;
+    }
+  }
+}
+
+.filter-box--inherit {
+  &:hover {
+    img {
+      filter:(16px 16px 20px red) invert(75%);;
+    }
+  }
+}
+
+.filter-box--initial {
+  &:hover {
+    img {
+      filter: initial;
+    }
+  }
+}
+
+.filter-box--revert {
+  &:hover {
+    img {
+      filter: revert;
+    }
+  }
+}
+
+.filter-box--revert-layer {
+  &:hover {
+    img {
+      filter: revert-layer;
+    }
+  }
+}
+
+.filter-box--unset {
+  &:hover {
+    img {
+      filter: unset;
+    }
+  }
+}
+
+.filter-box--multiple-1 {
+  &:hover {
+    img {
+      transform: translate(-25px, 50px);
+      filter: drop-shadow(25px -50px 10px black);
+
+    }
+  }
+}
+
+.filter-box--multiple-2 {
+  &:hover {
+    img {
+      filter: brightness();
+      transform: scale(1.5, 1.5);
+    }
+  }
+}
+
+.filter-box--multiple-3 {
+  &:hover {
+    img {
+      transform: scale(1.5, 1.5);
+      transform: rotate(20deg);
+      filter: blur(2);
+    }
+  }
+}
+
+.filter-box--multiple-4 {
+  &:hover {
+    img {
+      filter: hue-rotate(260deg) brightness();
+      transform: matrix(1.5, -0.3, 0, 1.5, 1, 0);
+    }
+  }
+}
+
